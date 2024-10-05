@@ -1,0 +1,90 @@
+[
+	{
+		"name": "Amazon Web Services (AWS)",
+		"url": "https://aws.amazon.com",
+		"description": "A comprehensive and widely adopted cloud platform offering over 200 fully-featured services globally, including computing, storage, and database solutions.",
+		"services": [
+			"EC2 (Elastic Compute Cloud)",
+			"S3 (Simple Storage Service)",
+			"Lambda",
+			"RDS (Relational Database Service)"
+		]
+	},
+	{
+		"name": "Microsoft Azure",
+		"url": "https://azure.microsoft.com",
+		"description": "Microsoft’s cloud platform offering a variety of services including computing, analytics, storage, and networking, aimed at building, managing, and deploying applications.",
+		"services": [
+			"Virtual Machines",
+			"Azure Blob Storage",
+			"Azure Functions",
+			"Cosmos DB"
+		]
+	},
+	{
+		"name": "Google Cloud Platform (GCP)",
+		"url": "https://cloud.google.com",
+		"description": "Google’s cloud computing services provide a range of solutions for building, deploying, and scaling applications, websites, and services.",
+		"services": [
+			"Compute Engine",
+			"Cloud Storage",
+			"App Engine",
+			"BigQuery"
+		]
+	},
+	{
+		"name": "Hetzner Cloud",
+		"url": "https://www.hetzner.com/cloud",
+		"description": "Hetzner Cloud offers affordable cloud server solutions with high performance, flexibility, and simplicity, ideal for developers and businesses alike.",
+		"services": [
+			"Cloud Servers",
+			"Volumes (Block Storage)",
+			"Load Balancers",
+			"Private Networks"
+		]
+	},
+	{
+		"name": "DigitalOcean",
+		"url": "https://www.digitalocean.com",
+		"description": "Cloud infrastructure provider focusing on simplicity, offering cloud computing solutions like Droplets and managed Kubernetes for developers and small businesses.",
+		"services": [
+			"Droplets (Virtual Machines)",
+			"Spaces (Object Storage)",
+			"Managed Databases",
+			"Kubernetes"
+		]
+	},
+	{
+		"name": "IBM Cloud",
+		"url": "https://www.ibm.com/cloud",
+		"description": "A hybrid cloud platform that offers IaaS, PaaS, and SaaS services for enterprises to build and deploy applications, with a focus on AI and analytics.",
+		"services": [
+			"Bare Metal Servers",
+			"Virtual Servers",
+			"Cloud Object Storage",
+			"IBM Watson (AI)"
+		]
+	},
+	{
+		"name": "Oracle Cloud",
+		"url": "https://www.oracle.com/cloud",
+		"description": "Oracle’s cloud platform provides comprehensive cloud applications and services for businesses, including infrastructure, databases, and application development.",
+		"services": [
+			"Compute Instances",
+			"Autonomous Database",
+			"Object Storage",
+			"OCI (Oracle Cloud Infrastructure)"
+		]
+	},
+	{
+		"name": "Linode (Akamai)",
+		"url": "https://www.linode.com",
+		"description": "Linode (now part of Akamai) provides simple and cost-effective cloud hosting services, with a focus on Linux virtual machines and developers.",
+		"services": [
+			"Linux Virtual Machines",
+			"Block Storage",
+			"NodeBalancers",
+			"Managed Databases"
+		]
+	}
+]
