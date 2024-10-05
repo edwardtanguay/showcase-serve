@@ -1,5 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import { CloudService } from "./types";
+import rawCloudServices from './data/cloudServices.json';
+
+const initialCloudServices: CloudService[] = rawCloudServices;
 
 interface IAppContext {
 	message: string
@@ -18,9 +21,9 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
 	useEffect(() => {
 		(async () => {
-			const response = await fetch('http://localhost:4501/cloudServices.json');
-			const _cloudServices = await response.json();
-			setCloudServices(_cloudServices);
+			// const response = await fetch('http://localhost:4501/cloudServices.json');
+			// const _cloudServices = await response.json();
+			setCloudServices(initialCloudServices);
 		})();
 	}, []);
 
