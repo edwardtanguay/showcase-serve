@@ -12,7 +12,7 @@
 		"preview": "vite preview",
 		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
 		"start": "conc \"npm run api\" \"npm run livefrontend\"",
-		"livefrontend": "vite serve --host --port 3518",
+		"livefrontend": "vite serve --host --port 3522",
 		"setup": "npm i && npm run build && pm2 start --name showcase-serve npm -- start --update-env --time && pm2 save",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart showcase-serve --update-env --time && pm2 save"
 	},
