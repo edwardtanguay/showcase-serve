@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { AppContext } from "../AppContext"
+import { GiClassicalKnowledge } from "react-icons/gi";
 
 export const PageWelcome = () => {
 	const { message, cloudServices } = useContext(AppContext);
@@ -14,7 +15,7 @@ export const PageWelcome = () => {
 				{cloudServices.map(cloudService => {
 					return (
 						<div className="bg-slate-500 p-3 mb-2 rounded" key={cloudService.id}>
-							<img src="http://localhost:4501/images/cloudService_1.png"/>
+							<img src={`http://localhost:4501/images/cloudService_${cloudService.id}.png`} className="float-right w-[3rem] rounded-sm" />
 							<div className="text-base font-semibold">{cloudService.name}</div>
 							<div className="text-sm italic">{cloudService.description}</div>
 						</div>
