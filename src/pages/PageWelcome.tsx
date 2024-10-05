@@ -2,9 +2,24 @@ import { useContext } from "react"
 import { AppContext } from "../AppContext"
 
 export const PageWelcome = () => {
-	const { message } = useContext(AppContext);
+	const { message, cloudServices } = useContext(AppContext);
 
 	return (
-		<p>{message}</p>
+		<>
+			<p>{message}</p>
+
+			<h2 className="mt-3 text-2xl mb-2">Cloud Services</h2>
+			<p className="mb-2">There are {cloudServices.length} cloud services.</p>
+			<div>
+				{cloudServices.map(cloudService => {
+					return (
+						<div className="bg-slate-500 p-3 mb-2 rounded" key={cloudService.id}>
+							<div className="text-base font-semibold">{cloudService.name}</div>
+							<div className="text-sm italic">{cloudService.description}</div>
+						</div>
+					)
+				})}
+			</div>
+		</>
 	)
 }
